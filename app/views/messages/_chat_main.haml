@@ -1,0 +1,41 @@
+!!!
+%html{lang: "ja"}
+  %head
+    %meta{charset: "utf-8"}
+  %body
+  .chat-main
+    .main-header
+      .main-header__left-box
+        %h2.main-header__left-box__current-group test
+        .main-header__left-box__member-list
+        %ul 
+        %li.main-header__left-box__member-list__member Member：masa
+      = link_to "#", class: "main-header__edit-btn" do
+        Edit
+      
+    .messages
+      .message
+        .message__upper-info
+          .message__upper-info__talker masa
+          .message__upper-info__date 2020/04/08(Web) 17:43:01
+        .message__text おはよう！
+      .message
+        .message__upper-info
+          .message__upper-info__talker masa
+          .message__upper-info__date 2020/04/08(Web) 17:43:01
+        .message__text おはよう！
+      .message
+        .message__upper-info
+          .message__upper-info__talker masa
+          .message__upper-info__date 2020/04/08(Web) 17:43:01
+        .message__text おはよう！
+    .form
+      %form.new-message
+        %input.form__message{placeholder: 'type a message'}
+        .form__mask
+          %label.form__mask__image
+            = icon('far','image',class: 'icon')
+            %input.hidden{type: 'file'}
+        %input.form__submit{type: 'submit', value: 'Send'}
+          
+
