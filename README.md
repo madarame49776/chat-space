@@ -13,7 +13,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |image|string||
-|text|text||
+|content|string||
 |user_id|references|null: false, foreign_key: true|
 |group_id|references|null: false, foreign_key: true|
 ## Association
