@@ -39,3 +39,20 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
+
+&__text {
+    font-size: 14px;
+    color: #434A54;
+    margin-top: 12px;
+  }
+  &__upper-info {
+  display: flex;
+  &__talker {
+    font-size: 16px;
+    color: #333333;
+  }
+  &__date {
+    font-size: 12px;
+    color: $mainGrayColor;
+  }
+}
