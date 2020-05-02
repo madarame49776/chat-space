@@ -37,7 +37,7 @@
     width: 100%;
     color: $mainWhiteColor;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: bold;   
     }
   .group__message {
     width: 100%;
@@ -47,4 +47,8 @@
     margin-top: 5px;
     margin-bottom: 40px;
   }
+}
+
+.groups {
+  text-decoration: none;
 }
